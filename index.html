@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>
+      JavaScript Model Page  
+    </title>  
+  </head>
+  <body>
+    <script>
+      function demo(){
+        var name = "<b>Hello !</b>";
+         name = name + " <b><i>"+document.getElementById("username").value+"</i></b>";
+         name = name + "<br><i>Welcome to our Web page</i>";
+        document.getElementById("result").innerHTML = name;
+      }
+    </script>
+    <h1 align = "center">Display Name In Page using JS</h1>  
+   <label for = "username">Username</label>
+   <input type = "text" id = "username" placeholder = "Enter your name" value="" />
+   <input type = "submit" value = "click" onclick = "demo();" />
+   <div id = "result"></div>
+  </body>
+</html>
